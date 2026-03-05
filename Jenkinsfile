@@ -5,7 +5,7 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/your-repo/frontend-project.git'
+                git 'https://github.com/Ramyasrimounika-Ch/JENKINS-DEMO'
             }
         }
 
@@ -28,4 +28,5 @@ pipeline {
             }
         }
     }
+
 }
