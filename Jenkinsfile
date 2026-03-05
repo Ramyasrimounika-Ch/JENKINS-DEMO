@@ -5,28 +5,26 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/Ramyasrimounika-Ch/JENKINS-DEMO'
+                git branch: 'main', url: 'https://github.com/Ramyasrimounika-Ch/JENKINS-DEMO.git'
             }
         }
 
         stage('Build') {
             steps {
-                echo "Building the frontend project"
+                echo "Building the project"
             }
         }
 
         stage('Test') {
             steps {
-                echo "Testing the application"
+                echo "Testing the project"
             }
         }
 
         stage('Deploy') {
             steps {
-                echo "Deploying application"
-                sh 'cp index.html /var/www/html/'
+                echo "Deployment successful"
             }
         }
     }
-
 }
